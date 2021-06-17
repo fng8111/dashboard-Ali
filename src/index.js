@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Grid from "@material-ui/core/Grid";
+import Navbar from "./components/navbar";
+import Sidebar from "./components/sidebar";
+import Content from "./components/content";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <Grid container>
+      <Grid item>
+        <Navbar />
+      </Grid>
+      <Grid container>
+        <Grid item>
+          <Sidebar className="sidebar" />
+        </Grid>
+        <Grid item>
+          <Content className="content" />
+        </Grid>
+      </Grid>
+    </Grid>
+  );
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App />, document.querySelector("#root"));

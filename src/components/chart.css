@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.bar {
+  margin-top: 0;
+  background-color: white;
+}

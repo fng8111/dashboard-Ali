@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  width: calc(100vw - 230px);
+  height: calc(100vh - 60px);
+  background-color: #f4f6f8;
+  position: absolute;
+}
+
+.herologo {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.herologo > img {
+  width: 200px;
+}
+
+.subcontainer {
+  position: relative;
+  width: 95%;
+  height: 200px;
+  margin-left: 2.5%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.chart {
+  width: 49%;
+  background-color: white;
+  height: 100%;
+}
+
+.cardscontainer {
+  position: relative;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
